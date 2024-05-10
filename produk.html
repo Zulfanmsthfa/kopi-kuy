@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style data-info="kode css bisa ditulis di bawah sini atau di css/produk.css">
+        .bg-cokelat{
+            background-color: rgb(114, 5, 5);
+        }
+
+    </style>
+</head>
+
+<body data-info="tulis kode bootstrap di baris 22">
+
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo_kuy.png" height="40" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11"
+                aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                    </li>
+
+                </ul>
+                <a class="btn btn-outline-light ms-md-3"
+                    href="https://wa.me/628123456789?text=Halo Saya mau beli produk dong">
+                    <i class="bi bi-whatsapp"></i> Chat
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="riki-block produk text-center my-5 py-5">
+        <div class="container">
+            <h1>Pilih Produk Anda</h1>
+            <p class="fs-4">Kualitas terbaik biji kopi pilihan fresh diambil langsung dari petani</p>
+            <hr class="border border-success border-3 opacity-75">
+    
+            <!-- Ini Untuk Select -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="select_kopi">
+                            <option selected disabled>-</option>
+                            <option value="arabica">Arabica</option>
+                            <option value="robusta">Robusta</option>
+                            <option value="nonkopi">Non Kopi</option>
+                        </select>
+                        <label for="select_kopi">Pilih Jenis Produk</label>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="baris_produk" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center mt-5">
+    
+                <!--awal copy kolom produk-->
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="images/produk/product_capuchino.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    <i class="bi bi-cup-hot"></i> 250 Ml
+                                </div>
+                                <div class="col fw-bold text-primary">
+                                    25.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100"><i class="bi bi-cart2"></i> Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- akhir copy kolom produk -->
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Caffe Latte</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    <i class="bi bi-cup-hot"></i> 250 Ml
+                                </div>
+                                <div class="col fw-bold text-primary">
+                                    25.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100"><i class="bi bi-cart2"></i> Beli</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Moccachino</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    <i class="bi bi-cup-hot"></i> 250 Ml
+                                </div>
+                                <div class="col fw-bold text-primary">
+                                    25.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100"><i class="bi bi-cart2"></i> Beli</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4io1QaR7OgGG_qjcj9G34exiHY1KIUtvK6A&s" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso</h5>
+                            <div class="row hargasize my-4">
+                                <div class="col">
+                                    <i class="bi bi-cup-hot"></i> 250 Ml
+                                </div>
+                                <div class="col fw-bold text-primary">
+                                    25.000
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100"><i class="bi bi-cart2"></i> Beli</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <footer class="riki-block footer-small py-4 bg-primary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8">
+                    <ul class="nav justify-content-center justify-content-md-start">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+                    &copy; 2024 Kopi Kuy &amp; Team . All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+   
+
+    
+
+    <script src="js/produk.js"></script>
+    <script data-info="bisa tulis kode js di js/produk.js ataupun di bawah sini">
+
+var data_mentah = {
+    "Arabica": [
+        {
+            "foto": "images/produk/product_capuchino.jpg",
+            "nama": "Cappuccino",
+            "size": "250 Ml",
+            "harga": "25.000",
+            "link": "https://tokopedia.com/produk/cappucciono1"
+        },
+        {
+            "foto": "images/produk/product_espresso.jpg",
+            "nama": "Espresso",
+            "size": "100 Ml",
+            "harga": "15.000",
+            "link": "https://tokopedia.com/produk/espresso"
+        },
+        {
+            "foto": "images/produk/product_kopi_susu.jpg",
+            "nama": "Kopi Susu",
+            "size": "200 Ml",
+            "harga": "20.000",
+            "link": "https://tokopedia.com/produk/kopisusu"
+        }
+    ],
+    "Robusta": [
+        {
+            foto: "images/produk/product_latte.jpg",
+            nama: "Latte",
+            size: "200 Ml",
+            harga: "20.000",
+            link: "https://tokopedia.com/produk/latte"
+        }
+    ],
+    "Non Kopi": [
+        {
+            foto: "https://www.sasa.co.id/medias/page_medias/es_cendol_nangka.jpg",
+            nama: "Es Cendol Nangka",
+            size: "200 Ml",
+            harga: "15.000",
+            link: "https://tokopedia.com/produk/escendol+nangka"
+        }
+    ],
+    "Snack": [
+        {
+            foto: "https://www.dapurkobe.co.id/wp-content/uploads/otak-otak-goreng-ala-kobe.jpg",
+            nama: "Otak otak",
+            size: "12 Buah",
+            harga: "15.000",
+            link: "https://tokopedia.com/produk/escendol+nangka"
+        }
+    ]
+}
+
+console.log("Isi Data mentah:", data_mentah)
+
+function updateSelect() {
+            select_kopi.innerHTML = `<option selected disabled>-</option>`
+            Object.keys(data_mentah).forEach(kategori => {
+                select_kopi.innerHTML += `<option value="${kategori}">${kategori}</option>`
+            })
+            console.log("Select berhasil Diganti")
+        }
+        updateSelect()
+        var data_kopi = []
+
+        select_kopi.onchange = function () {
+            var pilihan = select_kopi.value
+            console.log("Isi Pilihannya :", pilihan)
+
+            data_kopi = data_mentah[pilihan]
+            console.log("Isi Data yang dipilih :", data_kopi)
+            updateTampilan()
+        }
+
+        baris_produk.innerHTML = ''
+function updateTampilan() {
+    baris_produk.innerHTML = ''
+    data_kopi.forEach(kopi => {
+        baris_produk.innerHTML += `<!--awal copy kolom produk-->
+        <div class="col mb-4">
+            <div class="card">
+                <img src="${kopi.foto}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${kopi.nama}</h5>
+                    <div class="row hargasize my-4">
+                        <div class="col">
+                            <i class="bi bi-cup-hot"></i> ${kopi.size}
+                        </div>
+
+                        <div class="col fw-bold text-primary">
+                            ${kopi.harga}
+                        </div>
+                    </div>
+                    <a target="_blank" href="${kopi.link}" class="btn btn-primary w-100"><i class="bi bi-cart2"></i> Beli</a>
+                </div>
+            </div>
+        </div>
+        <!-- akhir copy kolom produk -->`
+    })
+
+}
+
+var sumber = "https://rikikurnia.com/prakerja/api/kopi"
+var sumber2 = "data.json"
+
+$.getJSON(sumber2).then(data => {
+    data_mentah = data
+    updateSelect()
+})
+
+
+
+    </script>
+</body>
+
+</html>
